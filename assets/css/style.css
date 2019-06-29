@@ -522,6 +522,17 @@ textarea.form-control {
   bottom: 0;
   left: 0
 }
+.layer-bg:after {
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .progress-wrapper {
   height: 130px;
@@ -809,6 +820,18 @@ blockquote {
 
 .page-title {
   padding: 250px 0 150px
+}
+
+.page-title:after{
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .page-title .container {
