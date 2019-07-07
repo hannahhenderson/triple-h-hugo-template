@@ -12,6 +12,11 @@ VERSION: Versoin Number
   font-display: swap
 }
 
+:root {
+  --headerDefault: url(../../images/headers/wave-of-the-future.jpg);
+  --headerAlt: url(../../images/headers/2019-vegas-hands.jpg)
+}
+
 body {
   line-height: 1.2;
   font-family: roboto, sans-serif;
@@ -463,7 +468,7 @@ textarea.form-control {
 .hero-area {
   padding: 250px 0 200px;
   position: relative;
-  background: url(../../images/header-wave-of-the-future.jpg) no-repeat center center fixed;
+  background: var(--headerDefault) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -796,6 +801,29 @@ blockquote {
   }
 }
 
+.page-title-alt {
+  padding: 250px 0 150px;
+  background: var(--headerAlt) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+/* Insert black transparency over hero image */
+.page-title-alt:after{
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.5)
+}
+
 .page-title-alt .container {
   position: relative;
   z-index: 1
@@ -804,44 +832,44 @@ blockquote {
 .page-title-alt .bg-shape-1 {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 100%
+  bottom: 0;
+  width: 100%
 }
 
 .page-title-alt .bg-shape-2 {
   position: absolute;
-  left: 70px;
-  top: 100px
+  left: -20px;
+  top: -10px
 }
 
 .page-title-alt .bg-shape-3 {
   position: absolute;
-  left: 30%;
-  top: 50px;
-  transform: rotate(180deg)
+  left: 10%;
+  top: 100px
 }
 
 .page-title-alt .bg-shape-4 {
   position: absolute;
-  left: 100px;
-  bottom: 100px
+  left: 50%;
+  top: -20px
 }
 
 .page-title-alt .bg-shape-5 {
   position: absolute;
-  left: 40%;
-  bottom: -25px
+  left: 90px;
+  bottom: -50px;
+  transform: rotate(180deg)
 }
 
 .page-title-alt .bg-shape-6 {
   position: absolute;
-  bottom: 100px;
-  right: -100px
+  right: 20%;
+  bottom: -20px
 }
 
 .page-title {
   padding: 250px 0 150px;
-  background: url(../../images/header-wave-of-the-future.jpg) no-repeat center center fixed;
+  background: var(--headerDefault) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

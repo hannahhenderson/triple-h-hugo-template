@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   <!-- page title -->
-  <section class="page-title-alt bg-primary position-relative overflow-hidden">
+  <section class="page-title-alt position-relative overflow-hidden">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -9,8 +9,6 @@
         </div>
       </div>
     </div>
-    <!-- background shapes -->
-    <img src="{{`images/headers/2019-vegas-hands.jpg`| relURL}}" alt="conference" class="img-fill-vertical">
   </section>
   <!-- /page title -->
 
@@ -25,7 +23,7 @@
           <div class="shadow-down mb-4">
             <img src="{{.Params.AuthorImage | absURL }}" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
           </div>
-          <img src="{{.Params.AuthorSignature | absURL }}" alt="signature" class="img-fluid">
+<!--          <img src="{{.Params.AuthorSignature | absURL }}" alt="signature" class="img-fluid">-->
           <h4>{{ .Params.Author }}</h4>
         </div>
       </div>
@@ -33,19 +31,19 @@
   </section>
   <!-- /about -->
 
-  {{ partial "work-process.html" . }}
+<!--  {{ partial "work-process.html" . }}-->
 
-  {{ partial "team.html" . }}
+<!--  {{ partial "team.html" . }}-->
 
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">My Clients</h2>
-        </div>
-      </div>
-      {{ partial "client-slider.html" . }}
-    </div>
+<!--  <section class="section">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-12 text-center">-->
+<!--          <h2 class="section-title">My Clients</h2>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      {{ partial "client-slider.html" . }}-->
+<!--    </div>-->
   </section>
 
 {{ end }}
