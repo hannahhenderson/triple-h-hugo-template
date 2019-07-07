@@ -155,6 +155,12 @@ h6,
   opacity: 0.5
 }
 
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden
