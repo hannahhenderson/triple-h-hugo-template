@@ -124,7 +124,6 @@ h6,
 
 .btn-primary {
   background: black;
-  opacity: 0.5;
   color: #fff
 }
 
@@ -145,20 +144,18 @@ h6,
 .btn-transparent {
   background: transparent;
   color: black;
-  opacity: 0.5;
   font-weight: 700
 }
 
 .btn-transparent:active,
 .btn-transparent:hover {
-  color: black;
-  opacity: 0.5
+  color: black
 }
 
 .card-img-top {
   width: 100%;
   height: 15vw;
-  object-fit: cover;
+  object-fit: cover
 }
 
 body {
@@ -408,7 +405,6 @@ a:hover {
 
 .form-control:focus {
   border-color: black;
-  opacity: 0.5;
   outline: 0;
   box-shadow: none !important
 }
@@ -449,7 +445,6 @@ textarea.form-control {
   .navigation {
     padding: 20px;
     background: black;
-    opacity: 0.5
   }
 }
 
@@ -620,7 +615,6 @@ textarea.form-control {
 
 .hover-bg-primary:hover {
   background: black;
-  opacity: 0.5
 }
 
 .hover-bg-primary:hover * {
@@ -630,7 +624,6 @@ textarea.form-control {
 .active-bg-primary {
   transition: .3s ease;
   background: black;
-  opacity: 0.5
 }
 
 .active-bg-primary * {
@@ -771,7 +764,6 @@ blockquote {
   padding: 10px 20px;
   background: #eaeaea;
   border-left: 2px solid black;
-  opacity: 0.5;
   font-style: italic;
   font-size: 22px
 }
