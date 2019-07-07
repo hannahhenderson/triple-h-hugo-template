@@ -456,9 +456,32 @@ textarea.form-control {
   color: #fff
 }
 
+.icon {
+  width: 10%;
+}
+
 .hero-area {
   padding: 250px 0 200px;
-  position: relative
+  position: relative;
+  background: url(../../images/header-wave-of-the-future.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+/* Insert black transparency over hero image */
+.hero-area:after{
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.5)
 }
 
 @media(max-width:767px) {
@@ -527,17 +550,6 @@ textarea.form-control {
   position: absolute;
   bottom: 0;
   left: 0
-}
-.layer-bg:after {
-  content: " ";
-  z-index: 0;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .progress-wrapper {
@@ -828,9 +840,15 @@ blockquote {
 }
 
 .page-title {
-  padding: 250px 0 150px
+  padding: 250px 0 150px;
+  background: url(../../images/header-wave-of-the-future.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
 }
 
+/* Insert black transparency over hero image */
 .page-title:after{
   content: " ";
   z-index: 0;
@@ -840,7 +858,8 @@ blockquote {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+
+  background: rgba(0, 0, 0, 0.5)
 }
 
 .page-title .container {
