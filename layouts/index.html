@@ -9,10 +9,17 @@
         </div>
       </div>
     </div>
+
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range .Site.Data.homepage.banner.socialLinks }}
-      <li class="mb-3"><a class="text-white" href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
+      <li class="mb-3">
+        <a href="{{ .URL }}">
+          <span class="fa-stack fa-large">
+            <i class="fab {{.icon}} fa-inverse fa-circle fa-stack-2x"></i>
+          </span>
+        </a>
+      </li>
       {{ end }}
     </ul>
     <!-- /social icon -->
