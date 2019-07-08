@@ -1,0 +1,13 @@
+{{ define "main" }}
+<!-- Page Header -->
+<header class="hero-area" style="background-image: url('{{ .Site.Params.image_404 | absURL }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 mx-auto">
+                <h1 class="text-white font-tertiary">404</h1>
+                <h1 class="text-white font-tertiary text-size-h3">{{ .Site.Params.title_404 }}</h1>
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}
