@@ -364,6 +364,10 @@ a:hover {
   overflow: hidden
 }
 
+.text-size-h3 {
+  font-size: 40px
+}
+
 .font-secondary {
   font-family: playfair display, serif !important
 }
@@ -794,11 +798,12 @@ blockquote {
 }
 
 .content * {
+  font-family: "raleway", sans-serif;
   margin-bottom: 20px
 }
 
 .content strong {
-  font-family: playfair display, serif;
+  font-family: "raleway", sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: var(--black);
