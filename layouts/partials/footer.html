@@ -33,7 +33,8 @@
 {{ end }}
 
 <!-- footer -->
-<footer class="bg-dark footer-section">
+<footer class="bg-dark {{if .Site.Params.footer.enable}}footer-section{{end}}">
+  {{if .Site.Params.footer.enable}}
   <div class="section">
     <div class="container">
       <div class="row">
@@ -58,6 +59,7 @@
       </div>
     </div>
   </div>
+  {{end}}
   <div class="border-top text-center border-dark py-5">
     <p class="mb-0 text-light">&copy Hannah Henderson</p>
   </div>
