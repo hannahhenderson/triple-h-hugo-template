@@ -14,7 +14,17 @@ VERSION: Versoin Number
 
 :root {
   --headerDefault: url(../../images/headers/wave-of-the-future.jpg);
-  --headerAlt: url(../../images/headers/2019-vegas-hands.jpg)
+  --headerAlt: url(../../images/headers/2019-vegas-hands.jpg);
+  --gray: #4c4c4c;
+  --lightRedGray: #eaeaea;
+  --lightGray: #999;
+  --darkGray: #222;
+  --black: #000;
+  --hhBlack: #000;
+  --violet: #542cb7;
+  --white: #fff;
+  --lightBlue: #c8d5ef;
+  --turquoise: #2bfdff;
 }
 
 body {
@@ -22,12 +32,12 @@ body {
   font-family: roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c
+  color: var(--gray)
 }
 
 p {
   font-weight: 400;
-  color: #4c4c4c;
+  color: var(--gray);
   font-size: 15px;
   line-height: 1.8;
   font-family: roboto, sans-serif
@@ -39,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: var(--black);
   font-family: playfair display, serif;
   line-height: 1.2
 }
@@ -123,33 +133,33 @@ h6,
 }
 
 .btn-primary {
-  background: black;
-  color: #fff
+  background: var(--hhBlack);
+  color: var(--white)
 }
 
 .btn-primary:active {
-  background: #542cb7 !important
+  background: var(--violet) !important
 }
 
 .btn-primary:hover {
-  background: #542cb7
+  background: var(--violet)
 }
 
 .btn-primary.focus,
 .btn-primary.active {
-  background: #542cb7 !important;
+  background: var(--violet) !important;
   box-shadow: none !important
 }
 
 .btn-transparent {
   background: transparent;
-  color: black;
+  color: var(--hhBlack);
   font-weight: 700
 }
 
 .btn-transparent:active,
 .btn-transparent:hover {
-  color: black
+  color: var(--hhBlack)
 }
 
 .card-img-top {
@@ -159,13 +169,13 @@ h6,
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white);
   overflow-x: hidden
 }
 
 ::selection {
-  background: #542cb7;
-  color: #fff
+  background: var(--violet);
+  color: var(--white)
 }
 
 .preloader {
@@ -174,7 +184,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--white);
   z-index: 999;
   display: flex;
   align-items: center;
@@ -212,11 +222,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: black !important
+  color: var(--hhBlack) !important
 }
 
 a:hover {
-  color: black
+  color: var(--hhBlack)
 }
 
 .slick-slide {
@@ -250,7 +260,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #000;
+  background: var(--black);
   opacity: .5
 }
 
@@ -264,27 +274,27 @@ a:hover {
 
 /* TODO: This is a little dark*/
 .bg-primary {
-  background: black !important;
+  background: var(--hhBlack) !important;
 }
 
 .bg-gray {
-  background: #eaeaea !important
+  background: var(--lightRedGray) !important
 }
 
 .text-primary {
-  color: black !important
+  color: var(--hhBlack) !important
 }
 
 .text-color {
-  color: #4c4c4c
+  color: var(--gray)
 }
 
 .text-dark {
-  color: #000 !important
+  color: var(--black) !important
 }
 
 .text-light {
-  color: #999 !important
+  color: var(--lightGray) !important
 }
 
 .mb-10 {
@@ -352,7 +362,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #222 !important
+  background-color: var(--darkGray) !important
 }
 
 .icon {
@@ -367,7 +377,7 @@ a:hover {
 }
 
 .icon-light {
-  color: #c8d5ef
+  color: var(--lightBlue)
 }
 
 .slick-dots {
@@ -381,7 +391,7 @@ a:hover {
 }
 
 .slick-dots li.slick-active button {
-  background: #fff;
+  background: var(--white);
   width: 25px
 }
 
@@ -399,12 +409,12 @@ a:hover {
 .form-control {
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #c7c7c7;
+  border-bottom: 1px solid var(--lightGray);
   height: 60px
 }
 
 .form-control:focus {
-  border-color: black;
+  border-color: var(--hhBlack);
   outline: 0;
   box-shadow: none !important
 }
@@ -431,7 +441,7 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: black;
+  background-color: var(--hhBlack);
   padding: 15px 100px
 }
 
@@ -444,7 +454,7 @@ textarea.form-control {
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background: black;
+    background: var(--hhBlack);
   }
 }
 
@@ -459,7 +469,7 @@ textarea.form-control {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff
+  color: var(--white)
 }
 
 .icon {
@@ -614,20 +624,20 @@ textarea.form-control {
 }
 
 .hover-bg-primary:hover {
-  background: black;
+  background: var(--hhBlack);
 }
 
 .hover-bg-primary:hover * {
-  color: #fff
+  color: var(--white)
 }
 
 .active-bg-primary {
   transition: .3s ease;
-  background: black;
+  background: var(--hhBlack);
 }
 
 .active-bg-primary * {
-  color: #fff
+  color: var(--white)
 }
 
 .hover-shadow {
@@ -679,7 +689,7 @@ textarea.form-control {
 }
 
 .testimonial-content strong {
-  color: #2bfdff;
+  color: var(--turquoise);
   font-weight: 400
 }
 
@@ -762,8 +772,8 @@ textarea.form-control {
 blockquote {
   display: inline-block;
   padding: 10px 20px;
-  background: #eaeaea;
-  border-left: 2px solid black;
+  background: var(--lightRedGray);
+  border-left: 2px solid var(--hhBlack);
   font-style: italic;
   font-size: 22px
 }
@@ -776,7 +786,7 @@ blockquote {
   font-family: playfair display, serif;
   font-size: 22px;
   font-weight: 400;
-  color: #000;
+  color: var(--black);
   display: inherit;
   line-height: 1.5
 }

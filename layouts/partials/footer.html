@@ -1,6 +1,6 @@
 {{ if .Site.Params.contact.enable }}
 <!-- contact -->
-<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+<section class="section section-on-footer">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -37,25 +37,32 @@
   <div class="section">
     <div class="container">
       <div class="row">
+        {{if .Site.Params.footer.email}}
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.email}}</p>
         </div>
+        {{end}}
+        {{if .Site.Params.footer.phone}}
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.phone}}</p>
         </div>
+        {{end}}
+        {{if .Site.Params.footer.address}}
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.address}}</p>
         </div>
+        {{end}}
       </div>
     </div>
   </div>
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Powered by <a href="https://themefisher.com/best-hugo-themes">Hugo Themes</a></p>
+    <p class="mb-0 text-light">&copy Hannah Henderson</p>
   </div>
 </footer>
+
 <!-- /footer -->
 
 {{ "<!-- Google Map API -->" | safeHTML }}
