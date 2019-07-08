@@ -12,6 +12,21 @@ VERSION: Versoin Number
   font-display: swap
 }
 
+/**
+Color scheme: Stylish and Sophisticated
+Source: https://visme.co/blog/website-color-schemes/
+Creator: Bordel studio
+
+--smoky: #5D5C61;
+--lightSmoky: #989399;
+--teal: #7395AE;
+--darkTeal: #557A95;
+--tan: #B0A295;
+--berry: #843C50;
+--lightestBlue: #B3C6D7;
+--stone: #ACABB2
+**/
+
 :root {
   --headerDefault: url(../../images/headers/wave-of-the-future.jpg);
   --headerAlt: url(../../images/headers/2019-vegas-hands.jpg);
