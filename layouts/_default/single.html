@@ -7,11 +7,39 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <p class="font-tertiary">{{ .PublishDate.Format "Jan 02, 2006" }} · {{.ReadingTime}} min read {{if .Params.Author}}· by {{.Params.Author}}{{end}}</p>
+          <br>
           <div class="content">
             {{.Content }}
           </div>
+          <br>
+
+          <br>
+          <p class="font-tertiary">Cover photo by
+            <a href={{.Params.image_author_link}}>{{.Params.image_author}}</a>.
+            {{if .Params.published_platform}}
+          </p>
+          <p class="font-secondary"><i>
+          This post was originally published on <a href={{.Params.published_link}}>{{.Params.published_platform}}</a>.{{end}}
+          </i></p>
+          <br>
+          <hr>
+          <br>
+          <div class="row">
+            {{ if .NextInSection }}
+            <span class="col">
+              <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title}}" class="btn btn-outline-secondary btn-sm nav-next">&larr; Next
+                Post</a>
+            </span>
+            {{ end }}
+            {{ if .PrevInSection }}
+            <span class="col">
+              <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title}}" class="btn btn-outline-secondary btn-sm nav-previous">
+                Previous Post &rarr;</a>
+            </span>
+            {{ end }}
         </div>
       </div>
+    </div>
     </div>
   </section>
 

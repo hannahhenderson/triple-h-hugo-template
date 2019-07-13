@@ -982,3 +982,11 @@ blockquote {
 .filter-controls li.active {
   font-weight: 700
 }
+
+.nav-previous {
+  float: right;
+}
+
+.nav-next {
+  float: left;
+}
