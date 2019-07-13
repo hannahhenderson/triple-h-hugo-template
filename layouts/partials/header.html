@@ -1,6 +1,8 @@
 <header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    {{ if  .Site.Params.logo }}
     <a href="{{ .Site.BaseURL }}"><img class="icon" src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
+    {{ end }}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

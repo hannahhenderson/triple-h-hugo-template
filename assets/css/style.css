@@ -392,7 +392,8 @@ a:hover {
 }
 
 .icon {
-  font-size: 45px
+  width: 4%;
+  font-size: 15px
 }
 
 .icon-bg {
@@ -496,10 +497,6 @@ textarea.form-control {
 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white)
-}
-
-.icon {
-  width: 10%;
 }
 
 .hero-area {
