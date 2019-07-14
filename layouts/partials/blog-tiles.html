@@ -3,7 +3,7 @@
         <div class="row">
             {{ range .Data.Pages }}
             <div class="col-lg-4 col-sm-6 mb-4">
-                <article class="card shadow">
+                <a class="text-dark" href="{{.Permalink}}"><article class="card shadow">
                     <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
                     <div class="card-body">
                         <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
@@ -13,6 +13,7 @@
                         <a href="{{.Permalink}}" class="btn btn-xs btn-primary">Read More</a>
                     </div>
                 </article>
+                </a>
             </div>
             {{ end }}
         </div>
