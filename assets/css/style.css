@@ -30,9 +30,9 @@ Creator: Bordel studio
 :root {
   --headerDefault: url(../../images/headers/wave-of-the-future.jpg);
   --headerAlt: url(../../images/headers/2019-vegas-hands.jpg);
-  --gray: #4c4c4c;
   --lightRedGray: #eaeaea;
   --lightGray: #999;
+  --gray: #4c4c4c;
   --darkGray: #222;
   --black: #000;
   --blackish: rgba(0,0,0,.84);
@@ -990,4 +990,21 @@ blockquote {
 
 .nav-next {
   float: left;
+}
+
+/* Style code blocks */
+pre {
+  background: var(--lightRedGray);
+  border-left: 3px solid var(--violet) ;
+  color: var(--gray);
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
