@@ -1,7 +1,7 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            {{ range .Data.Pages }}
+            {{ range where $.Site.RegularPages "Section" "blog" }}
             <div class="col-lg-4 col-sm-6 mb-4">
                 <a class="text-dark" href="{{.Permalink}}"><article class="card shadow">
                     <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
